@@ -1,4 +1,4 @@
-[*] functions
+- [x] functions
 - loops
 - booleans
 - if statments with: contains, isTrue, isFalse
