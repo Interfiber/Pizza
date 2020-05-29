@@ -22,9 +22,9 @@ dependencies {
 }
 
 group = 'io.interfiber.Pizza'
-version = '1.0'
-description = 'Pizza'
-sourceCompatibility = '1.8'
+version = '0.1 Beta'
+description = 'LightWeight Programming language'
+sourceCompatibility = '13'
 
 publishing {
     publications {
