@@ -1,2 +1,5 @@
-var cool "iyhrebfjrnfgbrhf"
-Console.pushString
+function hello {
+Console.pushString "HEllo!"
+Console.pushString "Hello I am from a function!"
+}
+funcrun hello
