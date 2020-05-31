@@ -1,5 +1,8 @@
 function hello {
 Console.pushString "HEllo!"
 Console.pushString "Hello I am from a function!"
+Console.pushString "Hello I am from a function too!"
 }
+Console.pushString "Hello I am from a function too!"
+
 funcrun hello
