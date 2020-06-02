@@ -1,5 +1,5 @@
 # Pizza
-Lightweight programming language built one the JVM
+Lightweight programming language built on the JVM
 
 ## Note
 Pizza is still under development and I do not recommend using it right now. This notice will change when Pizza build 1.0 is
