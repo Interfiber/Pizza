@@ -13,7 +13,7 @@ public class compiler {
 		File input = new File(inputFile);
 		Scanner reader = new Scanner(input);
 		String out = null;
-		while (reader.hasNext()) {
+		while (reader.hasNextLine()) {
 				out = reader.next();
 				if (out.contains("Console.pushString")) {
 					Screen.printString(reader.nextLine().replace("\"", "").trim());
@@ -44,6 +44,7 @@ public class compiler {
 					Function.runFuncFile(tmp.getTmpDir() + "/pizza/" + funcName);
 				}
 				if(out.contains("get")){
+
 				}
 
 			}

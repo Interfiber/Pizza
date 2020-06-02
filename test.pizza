@@ -1,8 +1,6 @@
 function hello {
-Console.pushString "HEllo!"
-Console.pushString "Hello I am from a function!"
-Console.pushString "Hello I am from a function too!"
+var cool "I AM FARTING"
 }
-Console.pushString "Hello I am from a function too!"
-
 funcrun hello
+Console.pushString ".:cool"
+Console.pushString "uef 2"

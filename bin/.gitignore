@@ -1,2 +1,8 @@
-/main/
-/test/
+/.gradle/
+/build/
+/.DS_Store
+*/.DS_Store
+.idea
+/.project
+/README.md
+/TODO.md
