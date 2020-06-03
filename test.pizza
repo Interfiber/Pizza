@@ -1,11 +1,3 @@
-var num1 6
-var num2 6
-get .:num1 + .:num2 out
-Console.pushString ".:out"
-function printStuff {
-
-Console.pushString "FUNCTION TIME"
-var cool tyty
-}
-funcRun printStuff
-Console.pushString ".:cool"
+var num1 12
+get .:num1 */ .:num1 output
+Console.pushString ".:output"

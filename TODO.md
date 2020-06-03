@@ -3,7 +3,7 @@
 - [ ] booleans
 - [ ] if statments with: contains, isTrue, isFalse
 - [ ] Arrays
-- [ ] Math functions that except varibles
+- [x] Math functions that except varibles
 - [ ] GUI library (BONUS: Try to use LWJGL or javafx)
 - [ ] import statments (example: import UrlLib
 - [ ] Add UrlLib:

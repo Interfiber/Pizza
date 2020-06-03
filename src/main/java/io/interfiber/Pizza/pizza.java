@@ -1,5 +1,7 @@
 package io.interfiber.Pizza;
 import io.interfiber.Pizza.compiler.*;
+import io.interfiber.Pizza.coreFunctions.Math;
+
 import java.io.*;
 public class pizza {
 
@@ -7,7 +9,6 @@ public class pizza {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // call compile function
-    	
         try {
             compiler.compile(args[0], true);
         }
