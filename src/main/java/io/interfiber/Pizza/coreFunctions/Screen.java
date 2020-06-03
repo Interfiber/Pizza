@@ -1,8 +1,7 @@
 package io.interfiber.Pizza.coreFunctions;
 
-import io.interfiber.Pizza.utils.tmp;
-
 import java.io.FileNotFoundException;
+
 
 public class Screen {
 	public static void printString(String input) throws FileNotFoundException {

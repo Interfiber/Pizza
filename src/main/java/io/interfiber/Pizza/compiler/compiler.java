@@ -4,7 +4,7 @@ import java.util.*;
 
 import io.interfiber.Pizza.coreFunctions.*;
 import io.interfiber.Pizza.coreFunctions.Math;
-import io.interfiber.Pizza.coreFunctions.System;
+import io.interfiber.Pizza.coreFunctions.command;
 import io.interfiber.Pizza.lang.VarNullException;
 import io.interfiber.Pizza.utils.*;
 
@@ -56,7 +56,7 @@ public class compiler {
 				Loop.forLoop(reader.nextInt(), reader.next());
 			}
 			if(out.contains("exec")){
-				System.executeCommand(reader.nextLine().replace("\"", "").trim());
+				command.executeCommand(reader.nextLine().replace("\"", "").trim());
 			}
 
 		}
