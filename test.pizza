@@ -1,3 +1,4 @@
-var num1 12
-get .:num1 */ .:num1 output
-Console.pushString ".:output"
+function test {
+exec "say hi!"
+}
+loop 50 test

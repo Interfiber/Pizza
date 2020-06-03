@@ -1,13 +1,13 @@
 package io.interfiber.Pizza.compiler;
 import java.io.*;
 import java.util.*;
-import io.interfiber.Pizza.coreFunctions.Function;
-import io.interfiber.Pizza.coreFunctions.Variable;
-import io.interfiber.Pizza.coreFunctions.Screen;
+
+import io.interfiber.Pizza.coreFunctions.*;
+import io.interfiber.Pizza.coreFunctions.Math;
+import io.interfiber.Pizza.coreFunctions.System;
 import io.interfiber.Pizza.lang.VarNullException;
 import io.interfiber.Pizza.utils.*;
-import io.interfiber.Pizza.coreFunctions.exit;
-import io.interfiber.Pizza.coreFunctions.Math;
+
 public class compiler {
 	public static void compile(String inputFile, boolean compiledFirst) throws IOException, NoSuchElementException{
 		// Get file data
@@ -51,6 +51,12 @@ public class compiler {
 			}
 			if (out.contains("get")) {
 				Math.get(reader.next(), reader.next(), reader.next(), reader.next());
+			}
+			if(out.contains("loop")){
+				Loop.forLoop(reader.nextInt(), reader.next());
+			}
+			if(out.contains("exec")){
+				System.executeCommand(reader.nextLine().replace("\"", "").trim());
 			}
 
 		}
