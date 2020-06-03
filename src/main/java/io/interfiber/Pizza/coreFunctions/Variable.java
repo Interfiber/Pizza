@@ -5,16 +5,14 @@ import io.interfiber.Pizza.utils.tmp;
 import java.io.*;
 import java.util.Scanner;
 
+import org.apache.commons.io.FileUtils;
+
 
 public class Variable {
 	public static void create(String varName, String varData) throws  IOException {
 		File pizzaTmp = new File(tmp.getTmpDir() + "pizza");
 		File varStore = new File(pizzaTmp.toString() + "/" + varName);
-		if (!varStore.createNewFile()){
-			System.err.println("ERROR! Could not create varStore file at" + tmp.getTmpDir() + "pizza/" + varName);
-			System.err.println("Please remove it before executing again!");
-			System.exit(1);
-		}
+		FileUtils.touch(varStore);
 		FileWriter fw = new FileWriter(varStore);
 		fw.write(varData);
 		fw.close();

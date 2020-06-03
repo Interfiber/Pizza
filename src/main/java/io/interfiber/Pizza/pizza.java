@@ -9,7 +9,7 @@ public class pizza {
         // call compile function
     	
         try {
-            compiler.compile(args[0]);
+            compiler.compile(args[0], true);
         }
         catch(java.lang.ArrayIndexOutOfBoundsException exception){
             System.out.println("Pizza -- CommandLine help page: 1");

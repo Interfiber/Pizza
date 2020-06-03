@@ -7,6 +7,6 @@ public class Function {
 
     public static void runFuncFile(String path) throws IOException {
             //Run function. DONE!
-        compiler.compile(path);
+        compiler.compile(path, false);
     }
 }

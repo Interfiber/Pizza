@@ -1,6 +1,11 @@
-function hello {
-var cool "HELLO!
+var num1 6
+var num2 6
+get .:num1 + .:num2 out
+Console.pushString ".:out"
+function printStuff {
+
+Console.pushString "FUNCTION TIME"
+var cool tyty
 }
-funcrun hello
+funcRun printStuff
 Console.pushString ".:cool"
-Console.pushString "uef 2"
