@@ -1,4 +1,0 @@
-function test {
-exec "say hi!"
-}
-loop 50 test
