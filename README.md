@@ -17,4 +17,5 @@ Or if you have a gradle install you can just run
 ```
 gradle build
 ```
+I dont recommend doing this though so read the Installer docs [here](https://interfiber.github.io/docs/pizza-installer)
 
