@@ -22,7 +22,7 @@ dependencies {
 
 }
 group = 'io.interfiber.Pizza'
-version = '0.1 Beta'
+version = '0.2 Beta'
 description = 'Pizza'
 sourceCompatibility = '13'
 

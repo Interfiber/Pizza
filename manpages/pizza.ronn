@@ -1,0 +1,6 @@
+pizza(1) -- Pizza program launcher
+
+## SYNOPIS
+pizza [options] [<file>]
+
+## DESCRIPTION

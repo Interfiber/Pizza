@@ -9,8 +9,25 @@ public class pizza {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // call compile function
+        if(args[0].contains("--version") || args[0].contains("-v")){
+            System.out.println("Pizza version information:");
+            System.out.print("\n");
+            String javaVersion = System.getProperty("java.version");
+            String javaVendor = System.getProperty("java.vendor");
+            String os = System.getProperty("os.name");
+            System.out.println("Java Version: " + javaVersion);
+            System.out.println("Pizza Version: 0.2 Beta");
+            System.out.println("Java Vendor: " + javaVendor);
+            System.out.println("OS: " + os);
+            System.exit(0);
+        }
+        if(args[0].contains("--help") || args[0].contains("-h")){
+
+        }
         try {
-            compiler.compile(args[0], true);
+            if(args[0].contains("compile")) {
+                compiler.compile(args[1], true);
+            }
         }
         catch(java.lang.ArrayIndexOutOfBoundsException exception){
             System.out.println("Pizza -- CommandLine help page: 1");

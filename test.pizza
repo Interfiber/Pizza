@@ -1,5 +1,7 @@
-function test {
-exec "say hi!"
+function end {
+Console.pushString "Hello!"
 }
-loop 50 test
 
+var cool foo
+if.contains cool foo
+end

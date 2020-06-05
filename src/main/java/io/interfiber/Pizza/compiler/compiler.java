@@ -58,6 +58,9 @@ public class compiler {
 			if(out.contains("exec")){
 				command.executeCommand(reader.nextLine().replace("\"", "").trim());
 			}
+			if(out.contains("if.contains")){
+				If.contains(reader.next(), reader.nextLine(), reader.nextLine());
+			}
 
 		}
 
