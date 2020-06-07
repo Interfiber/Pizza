@@ -28,10 +28,4 @@ public class Variable {
 		return varData;
 
 	}
-	public static void varExists(String varName){
-		File varFile = new File(tmp.getTmpDir() + "pizza/" + varName);
-		if(!varFile.exists()){
-			VarNullException.catchError(varName);
-		}
-	}
 }

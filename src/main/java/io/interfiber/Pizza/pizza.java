@@ -1,13 +1,16 @@
 package io.interfiber.Pizza;
 import io.interfiber.Pizza.compiler.*;
 import io.interfiber.Pizza.coreFunctions.Math;
+import io.interfiber.Pizza.lang.MissingFunctionException;
+import io.interfiber.Pizza.lang.SyntaxException;
+import io.interfiber.Pizza.lang.VarNullException;
 
 import java.io.*;
 public class pizza {
 
 	
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws FileNotFoundException, IOException, SyntaxException, VarNullException, MissingFunctionException {
         // call compile function
         if(args[0].contains("--version") || args[0].contains("-v")){
             System.out.println("Pizza version information:");

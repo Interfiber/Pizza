@@ -1,7 +1,6 @@
-function end {
-Console.pushString "Hello!"
+var cool test
+var new teste
+function isCool {
+Console.pushString "The varible named cool is equal to 'test'!"
 }
-
-var cool foo
-if.contains cool foo
-end
+if.contains cool .:new isCool

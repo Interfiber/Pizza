@@ -1,15 +1,15 @@
 package io.interfiber.Pizza.compiler;
 import java.io.*;
 import java.util.*;
-
 import io.interfiber.Pizza.coreFunctions.*;
 import io.interfiber.Pizza.coreFunctions.Math;
 import io.interfiber.Pizza.coreFunctions.command;
+import io.interfiber.Pizza.lang.MissingFunctionException;
+import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
 import io.interfiber.Pizza.utils.*;
-
 public class compiler {
-	public static void compile(String inputFile, boolean compiledFirst) throws IOException, NoSuchElementException{
+	public static void compile(String inputFile, boolean compiledFirst) throws IOException, NoSuchElementException, SyntaxException, VarNullException, MissingFunctionException {
 		// Get file data
 		File input = new File(inputFile);
 		Scanner reader = new Scanner(input);
@@ -17,17 +17,26 @@ public class compiler {
 		while (reader.hasNext()) {
 			out = reader.next();
 			if (out.contains("Console.pushString")) {
-				String message = reader.nextLine().replace("\"", "").trim();
+				String message = null;
 				try {
-					Screen.printString(message);
-				}catch(FileNotFoundException e){
-					VarNullException.catchError(message.replace(".:", "").trim());
+					message = reader.nextLine().replace("\"", "").trim();
+				}catch(NoSuchElementException ex){
+					if(message == null){
+						throw new SyntaxException("Can not print null");
+					}
 				}
+				Screen.printString(message);
 			}
 			if (out.contains("var")) {
 				Variable.create(reader.next(), reader.nextLine());
 			}
 			if (out.contains("exit")) {
+				String exitCode = null;
+				try {
+					exitCode = String.valueOf(reader.nextInt());
+				}catch(NoSuchElementException e){
+					throw new SyntaxException("Could not exit with exit code of " + exitCode);
+				}
 				exit.terminateProcess(0);
 			}
 			if (out.contains("function")) {
@@ -58,11 +67,12 @@ public class compiler {
 			if(out.contains("exec")){
 				command.executeCommand(reader.nextLine().replace("\"", "").trim());
 			}
-			if(out.contains("if.contains")){
-				If.contains(reader.next(), reader.nextLine(), reader.nextLine());
+			if(out.contains("if.contains")) {
+				String varible = reader.next();
+				String containsData = reader.next();
+				String funcName = reader.next();
+				If.contains(varible, containsData, funcName);
 			}
-
 		}
-
 	}
 	}
