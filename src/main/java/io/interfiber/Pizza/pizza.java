@@ -6,12 +6,15 @@ import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
 
 import java.io.*;
+import java.net.URL;
+
 public class pizza {
 
 	
 
-    public static void main(String[] args) throws FileNotFoundException, IOException, SyntaxException, VarNullException, MissingFunctionException {
+    public static void main(String[] args) throws FileNotFoundException, IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
         // call compile function
+
         if(args[0].contains("--version") || args[0].contains("-v")){
             System.out.println("Pizza version information:");
             System.out.print("\n");
@@ -23,6 +26,9 @@ public class pizza {
             System.out.println("Java Vendor: " + javaVendor);
             System.out.println("OS: " + os);
             System.exit(0);
+        }
+        if(args[0].contains("--java-version")){
+            System.out.println(System.getProperty("java.version"));
         }
         if(args[0].contains("--help") || args[0].contains("-h")){
 

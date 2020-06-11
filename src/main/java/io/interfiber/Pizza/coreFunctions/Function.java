@@ -8,7 +8,7 @@ import io.interfiber.Pizza.lang.VarNullException;
 import io.interfiber.Pizza.utils.tmp;
 public class Function {
 
-    public static void runFuncFile(String path) throws IOException, SyntaxException, VarNullException, MissingFunctionException {
+    public static void runFuncFile(String path) throws IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
         //Run function. DONE!
         File funcFile = new File(path);
         if(!funcFile.exists()){

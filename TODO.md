@@ -1,16 +1,13 @@
 - [x] functions
 - [x] loops
-- [ ] if statments with: contains, isTrue, isFalse
+- [x] if statments with: contains, isTrue, isFalse
 - [x] Execute System Commands 
 - [ ] Arrays
 - [x] Math functions that except varibles
 - [ ] import statments (example: import UrlLib
-- [ ] Add UrlLib:
+- [ ] Add HttpLib:
     - Read and display html files in Window
     - Download files from the internet and over http, and https
     - Ping a server to see its status(Does not need ping)
     - More...
-- [ ] Add IOLib:
-    - Read/Write to files
-    - Delete/Create folders and files
-    - More...
+

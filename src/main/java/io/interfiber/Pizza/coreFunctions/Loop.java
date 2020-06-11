@@ -12,7 +12,7 @@ public class Loop {
 
 	
 	
-	public static void forLoop(int loopTimes, String function) throws IOException, SyntaxException, VarNullException, MissingFunctionException {
+	public static void forLoop(int loopTimes, String function) throws IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
 		
 		for(int i=0;i<loopTimes;i++) {
 			Function.runFuncFile(tmp.getTmpDir() + "/pizza/" + function +  ".pizzafunc");

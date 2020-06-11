@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $1 == "compile" ]]; then
+  java -jar $PIZZA_HOME/libs/Pizza-0.2\ Beta.jar compile $2
+  rm -rf $TMPDIR/pizza
+fi
+if [[ $1 == "--version" ]]; then
+  java -jar $PIZZA_HOME/libs/Pizza-0.2\ Beta.jar --version
+fi

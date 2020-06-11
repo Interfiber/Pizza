@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4af24ab2-fb1c-4560-b7aa-51334cdf5ae4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/config/PizzaWrapper.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/HttpLib/Ping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/HttpLib/StartServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/ServerNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/IOError.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manpages/pizza.ronn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/If.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/If.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.pizza" beforeDir="false" afterPath="$PROJECT_DIR$/test.pizza" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1d8qbBBHGz8EfO2S3R27Aw3y3u3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4af24ab2-fb1c-4560-b7aa-51334cdf5ae4" name="Default Changelist" comment="" />
+      <created>1591817137113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591817137113</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1909" height="285" key="GridCell.Tab.0.bottom" timestamp="1591828568550">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1909" height="285" key="GridCell.Tab.0.bottom/0.23.2048.1129@0.23.2048.1129" timestamp="1591828568550" />
+    <state width="1909" height="285" key="GridCell.Tab.0.center" timestamp="1591828568549">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1909" height="285" key="GridCell.Tab.0.center/0.23.2048.1129@0.23.2048.1129" timestamp="1591828568549" />
+    <state width="1909" height="285" key="GridCell.Tab.0.left" timestamp="1591828568548">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1909" height="285" key="GridCell.Tab.0.left/0.23.2048.1129@0.23.2048.1129" timestamp="1591828568548" />
+    <state width="1909" height="285" key="GridCell.Tab.0.right" timestamp="1591828568549">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="1909" height="285" key="GridCell.Tab.0.right/0.23.2048.1129@0.23.2048.1129" timestamp="1591828568549" />
+    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1591828566336">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1591828566336" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

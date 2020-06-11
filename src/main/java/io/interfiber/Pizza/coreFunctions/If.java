@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class If {
 
-    public static void contains(String var, String containsData, String function) throws IOException, SyntaxException, VarNullException, MissingFunctionException {
+    public static void contains(String var, String containsData, String function) throws IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
         String varData = Variable.read(var);
         if(containsData.contains(".:")){
             //containsData is a var

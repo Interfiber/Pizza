@@ -1,6 +1,7 @@
-var cool test
-var new teste
-function isCool {
-Console.pushString "The varible named cool is equal to 'test'!"
-}
-if.contains cool .:new isCool
+get 8 + 8 out
+Console.pushString "8 + 8 is"
+Console.pushString ".:out"
+Console.pushString "Also"
+import HttpLib
+Server.StartServer 8 main
+

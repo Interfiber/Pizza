@@ -23,4 +23,7 @@ public class Screen {
 			System.out.println(input);
 		}
 }
+public static void printColor(String colorCode){
+
+}
 }

@@ -1,6 +1,8 @@
 package io.interfiber.Pizza.compiler;
 import java.io.*;
 import java.util.*;
+
+import io.interfiber.Pizza.HttpLib.StartServer;
 import io.interfiber.Pizza.coreFunctions.*;
 import io.interfiber.Pizza.coreFunctions.Math;
 import io.interfiber.Pizza.coreFunctions.command;
@@ -9,7 +11,8 @@ import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
 import io.interfiber.Pizza.utils.*;
 public class compiler {
-	public static void compile(String inputFile, boolean compiledFirst) throws IOException, NoSuchElementException, SyntaxException, VarNullException, MissingFunctionException {
+	public static String httpLibIsImported;
+	public static void compile(String inputFile, boolean compiledFirst) throws IOException, NoSuchElementException, SyntaxException, VarNullException, MissingFunctionException, Exception {
 		// Get file data
 		File input = new File(inputFile);
 		Scanner reader = new Scanner(input);
@@ -73,6 +76,7 @@ public class compiler {
 				String funcName = reader.next();
 				If.contains(varible, containsData, funcName);
 			}
+
 		}
 	}
 	}
