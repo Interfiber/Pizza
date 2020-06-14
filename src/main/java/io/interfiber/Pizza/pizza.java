@@ -1,6 +1,5 @@
 package io.interfiber.Pizza;
 import io.interfiber.Pizza.compiler.*;
-import io.interfiber.Pizza.coreFunctions.Math;
 import io.interfiber.Pizza.lang.MissingFunctionException;
 import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
@@ -31,20 +30,18 @@ public class pizza {
             System.out.println(System.getProperty("java.version"));
         }
         if(args[0].contains("--help") || args[0].contains("-h")){
+                System.out.println("Arguments:");
+                System.out.println("- compile [pizza file]: Compile .pizza file");
+                System.out.println("Info Flags:");
+                System.out.println("--version: get version of pizza");
+                System.out.println("Commands:");
+                System.out.println("--help: Show this page");
 
         }
-        try {
+
             if(args[0].contains("compile")) {
                 compiler.compile(args[1], true);
             }
-        }
-        catch(java.lang.ArrayIndexOutOfBoundsException exception){
-            System.out.println("Pizza -- CommandLine help page: 1");
-            System.out.println("        pizza [filepath(example:~/dev/test.pizza)]");
-            System.out.println("OPTIONS:");
-            System.out.println("init: generate pizza project");
-            System.out.println("install: Install a Pizza plugin for you project");
-            System.exit(1);
-        }
+
     }
 }

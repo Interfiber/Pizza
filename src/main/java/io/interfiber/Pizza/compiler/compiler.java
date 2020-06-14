@@ -2,7 +2,6 @@ package io.interfiber.Pizza.compiler;
 import java.io.*;
 import java.util.*;
 
-import io.interfiber.Pizza.HttpLib.StartServer;
 import io.interfiber.Pizza.coreFunctions.*;
 import io.interfiber.Pizza.coreFunctions.Math;
 import io.interfiber.Pizza.coreFunctions.command;
@@ -29,7 +28,10 @@ public class compiler {
 					}
 				}
 				Screen.printString(message);
+
 			}
+
+
 			if (out.contains("var")) {
 				Variable.create(reader.next(), reader.nextLine());
 			}
@@ -61,9 +63,13 @@ public class compiler {
 				String funcName = reader.next() + ".pizzafunc";
 				Function.runFuncFile(tmp.getTmpDir() + "/pizza/" + funcName);
 			}
-			if (out.contains("get")) {
+			if(out.contains("user.getNextLine")){
+				User.getInput(reader.next());
+			}
+			if (out.contains("Math.solve")) {
 				Math.get(reader.next(), reader.next(), reader.next(), reader.next());
 			}
+
 			if(out.contains("loop")){
 				Loop.forLoop(reader.nextInt(), reader.next());
 			}

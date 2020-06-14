@@ -23,6 +23,23 @@ public class Screen {
 			System.out.println(input);
 		}
 }
+public static void print(String input) throws FileNotFoundException, VarNullException{
+	if(input.contains(".:")){
+		String varFile = input.replace(".:", "");
+		String data = null;
+		try {
+			data = Variable.read(varFile.trim());
+		}catch(FileNotFoundException e){
+			throw new VarNullException(varFile);
+		}
+		System.out.print(data.trim());
+
+	}
+	if(!input.contains(".:")) {
+
+		System.out.println(input);
+	}
+}
 public static void printColor(String colorCode){
 
 }
