@@ -3,6 +3,7 @@ import io.interfiber.Pizza.compiler.*;
 import io.interfiber.Pizza.lang.MissingFunctionException;
 import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
+import io.interfiber.Pizza.utils.Log;
 
 import java.io.*;
 import java.net.URL;
@@ -13,7 +14,7 @@ public class pizza {
 
     public static void main(String[] args) throws FileNotFoundException, IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
         // call compile function
-
+        Log.init();
         if(args[0].contains("--version") || args[0].contains("-v")){
             System.out.println("Pizza version information:");
             System.out.print("\n");
