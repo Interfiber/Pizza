@@ -6,16 +6,16 @@ Pizza is still under development and I do not recommend using it right now. This
 released.
 
 ## Building pizza
-To build pizza from source open the Pizza fold in terminal and run 
+To build pizza from source open the Pizza folder in terminal and run 
 ```
 MAC/LINUX
-./gradlew build
+./mvnw clean compile assembly:single
 WINDOWS
-gradlew build
+mvnw clean compile assembly:single
 ```
-Or if you have a gradle install you can just run
+Or if you have a maven install you can just run
 ```
-gradle build
+mvn clean compile assembly:single
+
 ```
 I dont recommend doing this though so read the Installer docs [here](https://interfiber.github.io/docs/pizza-installer)
-
