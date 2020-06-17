@@ -14,6 +14,6 @@ public class Function {
         if(!funcFile.exists()){
             throw new MissingFunctionException(funcFile.getName().replace(".pizzafunc", "").trim());
         }
-        compiler.compile(path, false);
+        compiler.compile(path, false, true);
     }
 }

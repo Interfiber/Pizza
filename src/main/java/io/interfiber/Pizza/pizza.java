@@ -14,7 +14,6 @@ public class pizza {
 
     public static void main(String[] args) throws FileNotFoundException, IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
         // call compile function
-        Log.init();
         if(args[0].contains("--version") || args[0].contains("-v")){
             System.out.println("Pizza version information:");
             System.out.print("\n");
@@ -41,7 +40,15 @@ public class pizza {
         }
 
             if(args[0].contains("compile")) {
-                compiler.compile(args[1], true);
+                boolean saveTmp = false;
+                try {
+                    if (args[2].equals("--save-tmp")) {
+                        saveTmp = true;
+                    }
+                }catch(IndexOutOfBoundsException e){
+
+                }
+                compiler.compile(args[1], true, saveTmp);
             }
 
     }
