@@ -4,5 +4,5 @@ user.getNextLine num1
 Console.pushString "Enter Another Number:"
 user.getNextLine num2
 Console.pushString "Result:"
-Math.solve .:num1 + .:num2 out
+get .:num1 + .:num2 out
 Console.pushString ".:out"

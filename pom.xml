@@ -10,13 +10,6 @@
 
   <name>Pizza</name>
   <url>http://interfiber.github.io</url>
-  <repositories>
-    <repository>
-      <id>Sonatype-public</id>
-      <name>SnakeYAML repository</name>
-      <url>http://oss.sonatype.org/content/groups/public/</url>
-    </repository>
-  </repositories>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>13</maven.compiler.source>
@@ -34,16 +27,6 @@
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
     <version>2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.yaml</groupId>
-      <artifactId>snakeyaml</artifactId>
-      <version>1.21</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-core</artifactId>
-      <version>2.13.3</version>
     </dependency>
   </dependencies>
  <build>
@@ -80,6 +63,4 @@
      </resource>
    </resources>
   </build>
- 
- 
 </project>

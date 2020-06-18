@@ -1,0 +1,8 @@
+OS.getProperty User.Home homeDir
+var hi1 Hi Your User Home Dir Is at
+merge hi1 homeDir home
+Console.pushString ".:home"
+OS.getProperty User.Name userName
+var hi2 Hi You UserName Is
+merge hi2 userName usrOut
+Console.pushString ".:usrOut"

@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 import io.interfiber.Pizza.coreFunctions.Variable;
+import io.interfiber.Pizza.lang.IntOverflowException;
 import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.utils.tmp;
 import org.apache.commons.io.FileUtils;
@@ -101,7 +102,11 @@ public class Math {
 				Variable.create(output, String.valueOf(Integer.parseInt(num1Data.trim()) / Integer.parseInt(num2.trim())));
 			}
 		}catch(NumberFormatException num){
-			throw new SyntaxException("One Input Number is To Big");
+			try {
+				throw new IntOverflowException();
+			} catch (IntOverflowException e) {
+				e.printStackTrace();
+			}
 		}
 
 

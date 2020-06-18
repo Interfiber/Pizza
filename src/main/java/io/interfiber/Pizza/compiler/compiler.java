@@ -21,7 +21,7 @@ public class compiler {
 		String out = null;
 		while (reader.hasNext()) {
 			out = reader.next();
-			if (out.contains("Console.pushString")) {
+			if (out.equals("Console.pushString")) {
 				String message = null;
 				try {
 					message = reader.nextLine().replace("\"", "").trim();
@@ -35,10 +35,10 @@ public class compiler {
 			}
 
 
-			if (out.contains("var")) {
+			if (out.equals("var")) {
 				Variable.create(reader.next(), reader.nextLine());
 			}
-			if (out.contains("exit")) {
+			if (out.equals("exit")) {
 				String exitCode = null;
 				try {
 					exitCode = String.valueOf(reader.nextInt());
@@ -47,7 +47,7 @@ public class compiler {
 				}
 				exit.terminateProcess(0);
 			}
-			if (out.contains("function")) {
+			if (out.equals("function")) {
 				String name = reader.next();
 				String key = reader.next();
 				String code = reader.nextLine();
@@ -62,30 +62,30 @@ public class compiler {
 				}
 				fw.close();
 			}
-			if (out.contains("funcrun")) {
+			if (out.equals("funcrun")) {
 				String funcName = reader.next() + ".pizzafunc";
 				Function.runFuncFile(tmp.getTmpDir() + "/pizza/" + funcName);
 			}
-			if(out.contains("user.getNextLine")){
+			if(out.equals("user.getNextLine")){
 				User.getInput(reader.next());
 			}
-			if (out.contains("Math.solve")) {
+			if (out.equals("get")) {
 				Math.get(reader.next(), reader.next(), reader.next(), reader.next());
 			}
 
-			if(out.contains("loop")){
+			if(out.equals("loop")){
 				Loop.forLoop(reader.nextInt(), reader.next());
 			}
-			if(out.contains("exec")){
+			if(out.equals("exec")){
 				command.executeCommand(reader.nextLine().replace("\"", "").trim());
 			}
-			if(out.contains("if.contains")) {
+			if(out.equals("if.contains")) {
 				String varible = reader.next().replace("\"", "").trim();
 				String containsData = reader.next().replace("\"", "").trim();
 				String funcName = reader.next().replace("\"", "").trim();
 				If.contains(varible, containsData, funcName);
 			}
-			if(out.contains("Array")){
+			if(out.equals("Array")){
 				String name = reader.next();
 				String key = reader.next();
 				String values = reader.nextLine();
@@ -97,7 +97,7 @@ public class compiler {
 					i++;
 				}
 			}
-			if(out.contains("merge")){
+			if(out.equals("merge")){
 				// Syntax: merge var1 var2 var3
 				// Console.pushString ".:var3"
 				String Var1 = new String(reader.next());
@@ -106,6 +106,12 @@ public class compiler {
 				Variable.merge(Var1, Var2, VarOut);
 				// Merge Complete
 			}
+			if(out.equals("OS.getProperty")){
+				String property = reader.next();
+				String varOut = reader.next();
+				OS.getProperty(property, varOut);
+			}
+
 
 		}
 		if(compiledFirst){
@@ -116,9 +122,11 @@ public class compiler {
 			}
 			if(saveTmp == false) {
 				File remove = new File(tmp.getTmpDir() + "/pizza");
-				FileUtils.forceDelete(remove);
-				if (remove.exists()) {
-					System.out.println("Could Not Remove TmpDir!");
+				if(remove.exists()) {
+					FileUtils.forceDelete(remove);
+					if (remove.exists()) {
+						System.out.println("Could Not Remove TmpDir!");
+					}
 				}
 			}
 		}
