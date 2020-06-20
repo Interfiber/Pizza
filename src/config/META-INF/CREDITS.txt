@@ -1,0 +1,23 @@
+Credits For Pizza 0.3 Beta Snapshot
+
+Authors:
+
+Original Author: Interfiber(https://interfiber.github.io)
+That's It, Please Fork Pizza
+
+- Dependency Authors(And Plugins Used):
+
+Apache Commons: Apache Software Foundation(https://apache.org)
+Maven Assembly Plugin: Apache Software Foundation(https://github.com/apache/maven-assembly-plugin, https://apache.org)
+Maven Jar Plugin: Apache Software Foundation(https://github.com/apache/maven-jar-plugin, https://apache.org)
+Junit 5: The Junit Team(https://junit.org, https://github.com/junit-team/junit5)
+
+
+
+- Tools Used(Authors)
+
+Maven: Apache Software Foundation(https://apache.org)
+
+IntelliJ IDEA CE: Jetbrains(https://www.jetbrains.com/)
+
+StackOverflow: Why Did I put this here..... https://stackoverflow.com,  https://stackexchange.com

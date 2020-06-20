@@ -21,4 +21,3 @@ Console.pushString "Add or Subtract[a/b]:"
 user.getNextLine stats
 if.contains stats a add
 if.contains stats b sub
-

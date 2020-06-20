@@ -111,7 +111,16 @@ public class compiler {
 				String varOut = reader.next();
 				OS.getProperty(property, varOut);
 			}
-
+			if(out.equals("time.getLocal")){
+				String varOut = reader.next();
+				Time.getDateTime(varOut);
+			}
+			if(out.equals("square")){
+				// Other Math func
+				int num1 = reader.nextInt();
+				String varOut = reader.next();
+				MathSquare.square(num1, varOut);
+			}
 
 		}
 		if(compiledFirst){
@@ -120,7 +129,7 @@ public class compiler {
 				System.out.println("Please Remove This Folder Before Another Program Runs:");
 				System.out.println(tmp.getTmpDir() + "pizza");
 			}
-			if(saveTmp == false) {
+			if(!saveTmp) {
 				File remove = new File(tmp.getTmpDir() + "/pizza");
 				if(remove.exists()) {
 					FileUtils.forceDelete(remove);
