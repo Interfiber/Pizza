@@ -33,6 +33,12 @@
       <artifactId>joda-time</artifactId>
       <version>2.10.6</version>
     </dependency>
+    <dependency>
+      <groupId>org.urish.openal</groupId>
+      <artifactId>java-openal</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
   </dependencies>
  <build>
     <plugins>

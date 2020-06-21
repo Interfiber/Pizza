@@ -122,6 +122,7 @@ public class compiler {
 				MathSquare.square(num1, varOut);
 			}
 
+
 		}
 		if(compiledFirst){
 			if(saveTmp){

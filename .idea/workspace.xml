@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af24ab2-fb1c-4560-b7aa-51334cdf5ae4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizza" beforeDir="false" afterPath="$PROJECT_DIR$/pizza" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/MathSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/MathSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/interfiber/Pizza/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.pizza" beforeDir="false" afterPath="$PROJECT_DIR$/test.pizza" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/MathPi.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
