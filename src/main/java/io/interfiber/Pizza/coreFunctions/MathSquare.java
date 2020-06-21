@@ -1,5 +1,6 @@
 package io.interfiber.Pizza.coreFunctions;
 
+import io.interfiber.Pizza.lang.IntOverflowException;
 import io.interfiber.Pizza.lang.VarExistsException;
 import io.interfiber.Pizza.lang.VarNullException;
 import java.io.*;
@@ -15,7 +16,7 @@ import java.io.*;
 
 public class MathSquare {
 
-    public static void square(int input, String varOut) throws VarNullException, IOException {
+    public static void square(String input, String varOut) throws VarNullException, IOException, IntOverflowException {
         // This Should Be Easy...
         File varOutPath = new File(Variable.getVarPath(varOut));
         if(varOutPath.exists()){
@@ -25,7 +26,19 @@ public class MathSquare {
                 e.printStackTrace();
             }
         }
-        int square = input * input;
-        Variable.create(varOut, String.valueOf(square));
+        try {
+            if (input.contains(".:")) {
+                String varName = input.replace(".:", "");
+                String varData = Variable.read(varName);
+                int square = Integer.parseInt(varData) * Integer.parseInt(varData);
+                Variable.create(varOut, String.valueOf(square));
+            }
+            if (!input.contains(".:")) {
+                int square = Integer.parseInt(input) * Integer.parseInt(input);
+                Variable.create(varOut, String.valueOf(square));
+            }
+        }catch(NumberFormatException e){
+            throw new IntOverflowException();
+        }
     }
 }

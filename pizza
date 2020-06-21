@@ -1,12 +1,11 @@
 #!/bin/bash
 
 if [[ $1 == "compile" ]]; then
-  java -jar $PIZZA_HOME/build/libs/Pizza-0.2\ Beta.jar compile $2
-  rm -rf $TMPDIR/pizza
+  java -jar $PIZZA_HOME/build/libs/Pizza-0.3.jar compile $2
 fi
 if [[ $1 == "--version" ]]; then
-  java -jar $PIZZA_HOME/build/libs/Pizza-0.2\ Beta.jar --version
+  java -jar $PIZZA_HOME/build/libs/Pizza-0.3.jar --version
 fi
 if [[ $1 == "--help" ]]; then
-  java -jar $PIZZA_HOME/build/libs/Pizza-0.2\ Beta.jar --help
+  java -jar $PIZZA_HOME/build/libs/Pizza-0.3.jar --help
 fi

@@ -3,6 +3,7 @@ import io.interfiber.Pizza.compiler.*;
 import io.interfiber.Pizza.lang.MissingFunctionException;
 import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
+import java.util.*;
 
 import java.io.*;
 
@@ -36,6 +37,8 @@ public class pizza {
                 System.out.println("--help: Show this page");
 
         }
+        
+      
 
             if(args[0].contains("compile")) {
                 boolean saveTmp = false;
@@ -48,6 +51,6 @@ public class pizza {
                 }
                 compiler.compile(args[1], true, saveTmp);
             }
-
+			
     }
 }

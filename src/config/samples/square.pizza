@@ -1,0 +1,6 @@
+Console.pushString "Pizza Square Test"
+Console.pushString "Enter Number to be Squared:"
+user.getNextLine squareInput
+Console.pushString "Squared Output"
+square .:squareInput squared
+Console.pushString ".:squared"

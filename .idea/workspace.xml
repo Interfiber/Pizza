@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af24ab2-fb1c-4560-b7aa-51334cdf5ae4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pizza.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pizza.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/samples/better-calc.pizza" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/samples/better-calc.pizza" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza" beforeDir="false" afterPath="$PROJECT_DIR$/pizza" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/MathSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/MathSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/interfiber/Pizza/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.pizza" beforeDir="false" afterPath="$PROJECT_DIR$/test.pizza" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,20 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.YamlPropertyParser">
+  <component name="RunManager" selected="Application.PizzaInstaller">
+    <configuration name="PizzaInstaller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.interfiber.Pizza.Installer.PizzaInstaller" />
+      <module name="Pizza" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.interfiber.Pizza.Installer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.interfiber.Pizza.GUI.Window" />
       <module name="Pizza" />
@@ -79,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PizzaInstaller" />
         <item itemvalue="Application.YamlPropertyParser" />
         <item itemvalue="Application.Window" />
       </list>
@@ -118,33 +132,33 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="91" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2048.1129@0.23.2048.1129" timestamp="1592491219640" />
-    <state x="796" y="627" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592667872342">
+    <state x="796" y="627" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592692004156">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="796" y="627" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1129@0.23.2048.1129" timestamp="1592667872342" />
+    <state x="796" y="627" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1129@0.23.2048.1129" timestamp="1592692004156" />
     <state x="357" y="173" key="CommitChangelistDialog2" timestamp="1592322231334">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="357" y="173" key="CommitChangelistDialog2/0.23.2048.1129@0.23.2048.1129" timestamp="1592322231334" />
-    <state width="1797" height="307" key="GridCell.Tab.0.bottom" timestamp="1592610677150">
-      <screen x="87" y="23" width="1961" height="1129" />
+    <state width="2006" height="337" key="GridCell.Tab.0.bottom" timestamp="1592693471691">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="1941" height="223" key="GridCell.Tab.0.bottom/0.23.2048.1129@0.23.2048.1129" timestamp="1592503190814" />
+    <state width="2006" height="337" key="GridCell.Tab.0.bottom/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471691" />
     <state width="1797" height="307" key="GridCell.Tab.0.bottom/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677150" />
-    <state width="1797" height="307" key="GridCell.Tab.0.center" timestamp="1592610677149">
-      <screen x="87" y="23" width="1961" height="1129" />
+    <state width="2006" height="337" key="GridCell.Tab.0.center" timestamp="1592693471690">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="1941" height="223" key="GridCell.Tab.0.center/0.23.2048.1129@0.23.2048.1129" timestamp="1592503190813" />
+    <state width="2006" height="337" key="GridCell.Tab.0.center/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471690" />
     <state width="1797" height="307" key="GridCell.Tab.0.center/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677149" />
-    <state width="1797" height="307" key="GridCell.Tab.0.left" timestamp="1592610677149">
-      <screen x="87" y="23" width="1961" height="1129" />
+    <state width="2006" height="337" key="GridCell.Tab.0.left" timestamp="1592693471689">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="1941" height="223" key="GridCell.Tab.0.left/0.23.2048.1129@0.23.2048.1129" timestamp="1592503190813" />
+    <state width="2006" height="337" key="GridCell.Tab.0.left/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471689" />
     <state width="1797" height="307" key="GridCell.Tab.0.left/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677149" />
-    <state width="1797" height="307" key="GridCell.Tab.0.right" timestamp="1592610677150">
-      <screen x="87" y="23" width="1961" height="1129" />
+    <state width="2006" height="337" key="GridCell.Tab.0.right" timestamp="1592693471690">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="1941" height="223" key="GridCell.Tab.0.right/0.23.2048.1129@0.23.2048.1129" timestamp="1592503190814" />
+    <state width="2006" height="337" key="GridCell.Tab.0.right/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471690" />
     <state width="1797" height="307" key="GridCell.Tab.0.right/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677150" />
     <state x="0" y="476" key="Maven.ArtifactSearchDialog" timestamp="1591965050309">
       <screen x="0" y="23" width="2048" height="1129" />
@@ -163,10 +177,10 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="524" y="274" key="run.anything.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1592315510979" />
-    <state x="776" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1592671496693">
-      <screen x="87" y="23" width="1961" height="1129" />
+    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1592750111794">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1592576387836" />
+    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1592750111794" />
     <state x="776" y="268" width="670" height="676" key="search.everywhere.popup/87.23.1961.1129@87.23.1961.1129" timestamp="1592671496693" />
   </component>
   <component name="XDebuggerManager">

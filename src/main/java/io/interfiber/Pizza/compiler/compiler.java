@@ -117,7 +117,7 @@ public class compiler {
 			}
 			if(out.equals("square")){
 				// Other Math func
-				int num1 = reader.nextInt();
+				String num1 = reader.next();
 				String varOut = reader.next();
 				MathSquare.square(num1, varOut);
 			}
