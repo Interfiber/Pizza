@@ -1,4 +1,6 @@
 # Pizza
+![ ](repo/images/logo.png)
+
 Lightweight programming language built on the JVM
 
 ## Note
