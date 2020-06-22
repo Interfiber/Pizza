@@ -1,7 +1,9 @@
 # Pizza
 
+<img src=https://raw.githubusercontent.com/Interfiber/Pizza/master/repo/images/logo.png height=200 width=200><img>
+
 Lightweight programming language built on the JVM
-<img src=https://raw.githubusercontent.com/Interfiber/Pizza/master/repo/images/logo.png height=100 width=100><img>
+
 ## Note
 Pizza is still under development and I do not recommend using it right now. This notice will change when Pizza build 1.0 is
 released.
