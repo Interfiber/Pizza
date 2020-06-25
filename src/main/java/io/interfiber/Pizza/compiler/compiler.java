@@ -2,6 +2,7 @@ package io.interfiber.Pizza.compiler;
 import java.io.*;
 import java.util.*;
 
+import io.interfiber.Pizza.HttpLib.Downloader;
 import io.interfiber.Pizza.IOLib.Writer;
 import io.interfiber.Pizza.coreFunctions.*;
 import io.interfiber.Pizza.coreFunctions.Math;
@@ -14,6 +15,28 @@ import org.apache.commons.io.FileUtils;
 
 public class compiler {
 	public static String httpLibIsImported;
+
+	/**
+	 * Parses And Handles syntax
+	 * to Add More Syntax add another if statement
+	 * example:
+	 * if(out.equals("say")){
+	 * String message = reader.nextLine();
+	 * Process px = Runtime.getRuntime().exec("say " + message);
+	 * }
+	 * @author Interfiber
+	 * @version 1.4
+	 * @since 0.1
+	 * @param inputFile
+	 * @param compiledFirst
+	 * @param saveTmp
+	 * @throws IOException
+	 * @throws NoSuchElementException
+	 * @throws SyntaxException
+	 * @throws VarNullException
+	 * @throws MissingFunctionException
+	 * @throws Exception
+	 */
 	public static void compile(String inputFile, boolean compiledFirst, boolean saveTmp) throws IOException, NoSuchElementException, SyntaxException, VarNullException, MissingFunctionException, Exception {
 		// Get file data
 		File input = new File(inputFile);
@@ -121,7 +144,27 @@ public class compiler {
 				String varOut = reader.next();
 				MathSquare.square(num1, varOut);
 			}
-
+			if(out.equals("IO.retriveFile")) {
+				try {
+				String url = reader.next();
+				String outputFile = reader.next();
+				Downloader.downloadFile(url, outputFile);
+				}catch(NullPointerException e5) {
+					throw new SyntaxException("Missing or Corrupted Argument Found!");
+				}
+			}
+			if(out.equals("Time.sleep")) {
+				ThreadProcess tp = new ThreadProcess();
+				tp.sleep(Integer.parseInt(reader.next()));
+			}
+			if(out.equals("Window.init")) {
+				String inputYaml = reader.next();
+				Window.createWindow(inputYaml);
+			}
+			if(out.equals("Window.createPopup")) {
+				Window w = new Window();
+				w.createPopup(reader.nextLine());
+			}
 
 		}
 		if(compiledFirst){
@@ -130,6 +173,7 @@ public class compiler {
 				System.out.println("Please Remove This Folder Before Another Program Runs:");
 				System.out.println(tmp.getTmpDir() + "pizza");
 			}
+			
 			if(!saveTmp) {
 				File remove = new File(tmp.getTmpDir() + "/pizza");
 				if(remove.exists()) {

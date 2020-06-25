@@ -8,7 +8,13 @@ import java.io.IOException;
 import java.util.Date;
 
 public class Time {
-
+    /**
+     * Deal with things related to time
+     * like
+     * getting the current time
+     * @param varOut
+     * @throws IOException
+     */
     public static void getDateTime(String varOut) throws IOException {
         java.util.Date juDate = new Date();
         DateTime dt = new DateTime(juDate);

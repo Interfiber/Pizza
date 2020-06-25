@@ -9,10 +9,21 @@ import java.io.*;
 
 public class pizza {
 
-	
+    /**
+     * Launch pizza with arguments
+     * Main Class
+     * @param args
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws SyntaxException
+     * @throws VarNullException
+     * @throws MissingFunctionException
+     * @throws Exception
+     */
 
     public static void main(String[] args) throws FileNotFoundException, IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
         // call compile function
+    	try {
         if(args[0].contains("--version") || args[0].contains("-v")){
             System.out.println("Pizza version information:");
             System.out.print("\n");
@@ -20,13 +31,10 @@ public class pizza {
             String javaVendor = System.getProperty("java.vendor");
             String os = System.getProperty("os.name");
             System.out.println("Java Version: " + javaVersion);
-            System.out.println("Pizza Version: 0.2 Beta");
+            System.out.println("Pizza Version: 0.4 Beta");
             System.out.println("Java Vendor: " + javaVendor);
             System.out.println("OS: " + os);
             System.exit(0);
-        }
-        if(args[0].contains("--java-version")){
-            System.out.println(System.getProperty("java.version"));
         }
         if(args[0].contains("--help") || args[0].contains("-h")){
                 System.out.println("Arguments:");
@@ -51,6 +59,11 @@ public class pizza {
                 }
                 compiler.compile(args[1], true, saveTmp);
             }
+    	}catch(java.lang.ArrayIndexOutOfBoundsException e) {
+         	System.out.println("Error! No input files or arguments!");
+         	System.out.println("run pizza --help for more help");
+         	System.exit(-1);
+    	}
 			
     }
 }

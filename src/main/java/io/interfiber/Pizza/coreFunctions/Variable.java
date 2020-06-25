@@ -10,6 +10,14 @@ import org.apache.commons.io.FileUtils;
 
 
 public class Variable {
+	/**
+	 * Handle things related to varibles
+	 * such as read a vars contents,
+	 * test if a var exists, get a vars path, create a var, and merge to vars together.
+	 * @param varName
+	 * @param varData
+	 * @throws IOException
+	 */
 	public static void create(String varName, String varData) throws  IOException {
 		File pizzaTmp = new File(tmp.getTmpDir() + "pizza");
 		File varStore = new File(pizzaTmp.toString() + "/" + varName);

@@ -6,7 +6,7 @@
 
   <groupId>io.interfiber.Pizza</groupId>
   <artifactId>Pizza</artifactId>
-  <version>0.3</version>
+  <version>0.4 </version>
 
   <name>Pizza</name>
   <url>http://interfiber.github.io</url>
@@ -14,7 +14,21 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>13</maven.compiler.source>
     <maven.compiler.target>13</maven.compiler.target>
+    <lwjgl.version>3.2.3</lwjgl.version>
+	<joml.version>1.9.25</joml.version>
+	<lwjgl.natives>natives-macos</lwjgl.natives>
   </properties>
+  <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.lwjgl</groupId>
+				<artifactId>lwjgl-bom</artifactId>
+				<version>${lwjgl.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
   <dependencies>
     <dependency>
@@ -33,12 +47,12 @@
       <artifactId>joda-time</artifactId>
       <version>2.10.6</version>
     </dependency>
-    <dependency>
-      <groupId>org.urish.openal</groupId>
-      <artifactId>java-openal</artifactId>
-      <version>1.0.0</version>
-    </dependency>
 
+    <dependency>
+    <groupId>org.yaml</groupId>
+    <artifactId>snakeyaml</artifactId>
+    <version>1.21</version>            
+</dependency>
   </dependencies>
  <build>
     <plugins>

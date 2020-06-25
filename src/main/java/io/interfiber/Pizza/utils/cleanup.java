@@ -6,7 +6,10 @@ import java.io.IOException;
 
 
 public class cleanup {
-
+    /**
+     * Cleanup the folder created when pizza is running
+     * that contains variables, functions, Arrays, and other stuff
+     */
     public static  void cleanup(){
     File tmpPizza = new File(tmp.getTmpDir() + "pizza");
     try {

@@ -4,7 +4,11 @@ import io.interfiber.Pizza.compiler.compiler;
 import java.io.*;
 
 public class Importer {
-
+    /**
+     * Import packages into piza
+     * @deprecated
+     * @param libID
+     */
     public static void importCore(String libID){
         if(libID.contains("HttpLib")){
                 compiler compiler = new compiler();

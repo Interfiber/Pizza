@@ -6,6 +6,18 @@ import java.io.File;
 import java.io.IOException;
 
 public class OS {
+    /**
+     * Get system Property's and store them in a pizza variable.
+     * System Property's such as
+     * java version
+     * java vendor
+     * os name
+     * os version
+     * user home
+     * user name
+     * pizza version
+     * @return
+     */
     public static String getPizzaVersion(){
         return "0.3";
     }

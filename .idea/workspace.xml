@@ -3,9 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="4af24ab2-fb1c-4560-b7aa-51334cdf5ae4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pizza.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pizza.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/IOLib/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/IOLib/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/IOLib/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/IOLib/Writer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/compiler/compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/MathPi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/If.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/If.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/OS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/OS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/coreFunctions/exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/ArrayInputNullException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/ArrayInputNullException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/IntOverflowException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/IntOverflowException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/MissingFunctionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/MissingFunctionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/ServerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/ServerNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/SyntaxException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/SyntaxException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/VarCreateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/VarCreateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/VarExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/VarExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/VarNullException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/lang/VarNullException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/utils/cleanup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/utils/cleanup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.pizza" beforeDir="false" afterPath="$PROJECT_DIR$/test.pizza" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,10 +135,10 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="465" y="125" key="#Project_Structure/0.23.2048.1129@0.23.2048.1129" timestamp="1591915491786" />
-    <state x="1248" y="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591905278519">
+    <state x="1248" y="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592846650445">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="1248" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2048.1129@0.23.2048.1129" timestamp="1591905278519" />
+    <state x="1248" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2048.1129@0.23.2048.1129" timestamp="1592846650445" />
     <state x="1351" y="149" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1592492119341">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
@@ -135,25 +159,25 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="357" y="173" key="CommitChangelistDialog2/0.23.2048.1129@0.23.2048.1129" timestamp="1592322231334" />
-    <state width="2006" height="337" key="GridCell.Tab.0.bottom" timestamp="1592693471691">
+    <state width="2006" height="314" key="GridCell.Tab.0.bottom" timestamp="1592846736222">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="337" key="GridCell.Tab.0.bottom/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471691" />
+    <state width="2006" height="314" key="GridCell.Tab.0.bottom/0.23.2048.1129@0.23.2048.1129" timestamp="1592846736222" />
     <state width="1797" height="307" key="GridCell.Tab.0.bottom/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677150" />
-    <state width="2006" height="337" key="GridCell.Tab.0.center" timestamp="1592693471690">
+    <state width="2006" height="314" key="GridCell.Tab.0.center" timestamp="1592846736221">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="337" key="GridCell.Tab.0.center/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471690" />
+    <state width="2006" height="314" key="GridCell.Tab.0.center/0.23.2048.1129@0.23.2048.1129" timestamp="1592846736221" />
     <state width="1797" height="307" key="GridCell.Tab.0.center/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677149" />
-    <state width="2006" height="337" key="GridCell.Tab.0.left" timestamp="1592693471689">
+    <state width="2006" height="314" key="GridCell.Tab.0.left" timestamp="1592846736221">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="337" key="GridCell.Tab.0.left/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471689" />
+    <state width="2006" height="314" key="GridCell.Tab.0.left/0.23.2048.1129@0.23.2048.1129" timestamp="1592846736221" />
     <state width="1797" height="307" key="GridCell.Tab.0.left/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677149" />
-    <state width="2006" height="337" key="GridCell.Tab.0.right" timestamp="1592693471690">
+    <state width="2006" height="314" key="GridCell.Tab.0.right" timestamp="1592846736222">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="337" key="GridCell.Tab.0.right/0.23.2048.1129@0.23.2048.1129" timestamp="1592693471690" />
+    <state width="2006" height="314" key="GridCell.Tab.0.right/0.23.2048.1129@0.23.2048.1129" timestamp="1592846736222" />
     <state width="1797" height="307" key="GridCell.Tab.0.right/87.23.1961.1129@87.23.1961.1129" timestamp="1592610677150" />
     <state x="0" y="476" key="Maven.ArtifactSearchDialog" timestamp="1591965050309">
       <screen x="0" y="23" width="2048" height="1129" />
@@ -164,18 +188,18 @@
     </state>
     <state x="1024" y="172" key="SettingsEditor/0.0.2048.1152@0.0.2048.1152" timestamp="1592610491411" />
     <state x="1111" y="194" key="SettingsEditor/0.23.2048.1129@0.23.2048.1129" timestamp="1592667357980" />
-    <state x="0" y="400" key="new project wizard" timestamp="1592257174924">
+    <state x="217" y="226" key="new project wizard" timestamp="1593016677406">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="0" y="400" key="new project wizard/0.23.2048.1129@0.23.2048.1129" timestamp="1592257174924" />
+    <state x="217" y="226" key="new project wizard/0.23.2048.1129@0.23.2048.1129" timestamp="1593016677406" />
     <state x="524" y="274" key="run.anything.popup" timestamp="1592315510979">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="524" y="274" key="run.anything.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1592315510979" />
-    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1592750111794">
+    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1593011367088">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1592750111794" />
+    <state x="720" y="268" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1593011367088" />
     <state x="776" y="268" width="670" height="676" key="search.everywhere.popup/87.23.1961.1129@87.23.1961.1129" timestamp="1592671496693" />
   </component>
   <component name="XDebuggerManager">
@@ -183,7 +207,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/interfiber/Pizza/pizza.java</url>
-          <line>48</line>
+          <line>58</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -7,7 +7,15 @@ import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
 import io.interfiber.Pizza.utils.tmp;
 public class Function {
-
+    /**
+     * Create a pizza function
+     * @param path
+     * @throws IOException
+     * @throws SyntaxException
+     * @throws VarNullException
+     * @throws MissingFunctionException
+     * @throws Exception
+     */
     public static void runFuncFile(String path) throws IOException, SyntaxException, VarNullException, MissingFunctionException, Exception {
         //Run function. DONE!
         File funcFile = new File(path);
