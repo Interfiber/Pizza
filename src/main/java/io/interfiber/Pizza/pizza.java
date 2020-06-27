@@ -1,4 +1,5 @@
 package io.interfiber.Pizza;
+import io.interfiber.Pizza.commandline.Project;
 import io.interfiber.Pizza.compiler.*;
 import io.interfiber.Pizza.lang.MissingFunctionException;
 import io.interfiber.Pizza.lang.SyntaxException;
@@ -36,9 +37,14 @@ public class pizza {
             System.out.println("OS: " + os);
             System.exit(0);
         }
+        if(args[0].equals("init")) {
+        	Project p = new Project();
+        	p.create();
+        }
         if(args[0].contains("--help") || args[0].contains("-h")){
                 System.out.println("Arguments:");
                 System.out.println("- compile [pizza file]: Compile .pizza file");
+                System.out.println("- init: create Pizza project");
                 System.out.println("Info Flags:");
                 System.out.println("--version: get version of pizza");
                 System.out.println("Commands:");

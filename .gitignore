@@ -1,4 +1,10 @@
 */.DS_Store
 target
 .pizza
+build
+.idea
+.gradle
+.settings
+.classpath
+.project
 

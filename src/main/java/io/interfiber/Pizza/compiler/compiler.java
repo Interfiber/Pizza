@@ -59,7 +59,14 @@ public class compiler {
 
 
 			if (out.equals("var")) {
-				Variable.create(reader.next(), reader.nextLine());
+				String varName = reader.next();
+				String key = reader.next();
+				String varData = reader.nextLine();
+				if(!key.equals("=")) {
+					throw new SyntaxException("Expected Token =");
+				}
+				
+				Variable.create(varName, varData.replace("\"", ""));
 			}
 			if (out.equals("exit")) {
 				String exitCode = null;
@@ -115,7 +122,7 @@ public class compiler {
 				int i = 0;
 				tmp.createTmp();
 				while(!values.equals("}")){
-					Writer.write(values.trim(), tmp.getTmpDir() + "/pizza/" + name + "." + i);
+					Writer.write(values.replace("\"", "").trim(), tmp.getTmpDir() + "/pizza/" + name + "." + i);
 					values = reader.nextLine();
 					i++;
 				}
