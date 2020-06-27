@@ -16,13 +16,13 @@ If you want to tinker with pizza click [here](https://interfiber.github.io/pizza
 To build pizza from source open the Pizza folder in terminal and run 
 ```
 MAC/LINUX
-./mvnw clean compile assembly:single
+./gradlew build
 WINDOWS
-mvnw clean compile assembly:single
+gradlew build
 ```
-Or if you have a maven install you can just run
+Or if you have gradle installed you can just run
 ```
-mvn clean compile assembly:single
+gradle build
 
 ```
 I dont recommend doing this though so read the Installer docs [here](https://interfiber.github.io/docs/pizza-installer)
