@@ -10,6 +10,7 @@ released.
 
 ## Pizza Docs
 The Pizza Docs can be found [here](https://interfiber.github.io/pizza-docs)
+Docs will be added in pizza 1.0
 ## Pizza Javadoc
 If you want to tinker with pizza click [here](https://interfiber.github.io/pizza/dev/javadoc) to look at the [javadoc](https://en.wikipedia.org/wiki/Javadoc).
 ## Building pizza
