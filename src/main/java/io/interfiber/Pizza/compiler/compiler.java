@@ -1,17 +1,17 @@
 package io.interfiber.Pizza.compiler;
-import java.io.*;
-import java.util.*;
-
 import io.interfiber.Pizza.HttpLib.Downloader;
 import io.interfiber.Pizza.IOLib.Writer;
-import io.interfiber.Pizza.coreFunctions.*;
 import io.interfiber.Pizza.coreFunctions.Math;
-import io.interfiber.Pizza.coreFunctions.command;
-import io.interfiber.Pizza.lang.MissingFunctionException;
-import io.interfiber.Pizza.lang.SyntaxException;
-import io.interfiber.Pizza.lang.VarNullException;
-import io.interfiber.Pizza.utils.*;
+import io.interfiber.Pizza.coreFunctions.*;
+import io.interfiber.Pizza.lang.*;
+import io.interfiber.Pizza.utils.tmp;
 import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 public class compiler {
 	public static String httpLibIsImported;
@@ -172,6 +172,46 @@ public class compiler {
 				Window w = new Window();
 				w.createPopup(reader.nextLine());
 			}
+			if(out.equals("IStream")){
+				String var = reader.next();
+				String file = reader.next().replace("\"", "").trim();
+				String key = reader.next();
+				String placeHolder = reader.nextLine();
+				String text = reader.nextLine();
+				if(key.contains("{")){
+					FileWriter fw = new FileWriter(new File(file));
+					while(!text.contains("}")){
+						fw.write(text + "\n");
+						text = reader.nextLine();
+					}
+					fw.close();
+				}
+			}
+			if(out.equals("OStream")){
+				// Syntax
+				// OStream os = "file"
+				// Console.pushString ".:os"
+				String name = reader.next();
+				String key = reader.next();
+				if(!key.contains("=")){
+					throw new SyntaxException("Could Not find Symbol =");
+				}
+				String filePath = reader.next().replace("\"", "").trim();
+
+				File f = new File(filePath);
+				if(!f.exists()){
+					throw new MissingFileException(filePath);
+				}
+				File varPath = new File(Variable.getVarPath(name));
+				if(varPath.exists()){
+					throw new VarExistsException(name);
+				}
+				Scanner s = new Scanner(new File(filePath));
+				s.useDelimiter("\\Z");
+				Variable.create(name, s.next());
+			}
+
+
 
 		}
 		if(compiledFirst){

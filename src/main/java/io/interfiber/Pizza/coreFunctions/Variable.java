@@ -2,11 +2,13 @@ package io.interfiber.Pizza.coreFunctions;
 import io.interfiber.Pizza.lang.VarCreateException;
 import io.interfiber.Pizza.lang.VarNullException;
 import io.interfiber.Pizza.utils.tmp;
-
-import java.io.*;
-import java.util.Scanner;
-
 import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 
 
 public class Variable {
@@ -36,11 +38,11 @@ public class Variable {
 	public static String read(String varName) throws FileNotFoundException {
 		File varFile = new File(tmp.getTmpDir() + "pizza/" + varName);
 		Scanner varReader = new Scanner(varFile);
+		varReader.useDelimiter("\\Z");
 		String varData = null;
-		while(varReader.hasNextLine()){
-			varData = varReader.nextLine();
-		}
+		varData = varReader.next();
 		return varData;
+
 
 	}
 	public static String getVarPath(String var){return tmp.getTmpDir() + "/pizza/" + var;}

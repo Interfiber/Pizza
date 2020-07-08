@@ -1,11 +1,12 @@
 package io.interfiber.Pizza.coreFunctions;
-import java.io.*;
-
 import io.interfiber.Pizza.compiler.compiler;
 import io.interfiber.Pizza.lang.MissingFunctionException;
 import io.interfiber.Pizza.lang.SyntaxException;
 import io.interfiber.Pizza.lang.VarNullException;
-import io.interfiber.Pizza.utils.tmp;
+
+import java.io.File;
+import java.io.IOException;
+
 public class Function {
     /**
      * Create a pizza function
