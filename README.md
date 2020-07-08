@@ -14,7 +14,7 @@ Docs will be added in pizza 1.0
 ## Pizza Javadoc
 If you want to tinker with pizza click [here](https://interfiber.github.io/pizza/dev/javadoc) to look at the [javadoc](https://en.wikipedia.org/wiki/Javadoc).
 ## Building pizza
-To build pizza from source open the Pizza folder in terminal and run 
+To build pizza from source open the Pizza folder in terminal and run
 ```
 MAC/LINUX
 ./gradlew build
@@ -27,3 +27,5 @@ gradle build
 
 ```
 I dont recommend doing this though so read the Installer docs [here](https://interfiber.github.io/docs/pizza-installer)
+## Notes
+This project is not forked or based on the [pizza compiler project](http://pizzacompiler.sourceforge.net/). Or [Pizza Programming Language](https://github.com/nv-vn/Pizza) or [this](https://github.com/cpp-haters/pizza-lang) pizza project
