@@ -56,6 +56,17 @@ public class compiler {
 				Screen.printString(message);
 
 			}
+			if (out.equals("Console.printString")) {
+				String message = null;
+				try {
+					message = reader.nextLine().replace("\"", "").trim();
+				}catch(NoSuchElementException ex){
+					if(message == null){
+						throw new SyntaxException("Can not print null");
+					}
+				}
+				Screen.print(message);
+			}
 
 
 			if (out.equals("var")) {
@@ -209,6 +220,9 @@ public class compiler {
 				Scanner s = new Scanner(new File(filePath));
 				s.useDelimiter("\\Z");
 				Variable.create(name, s.next());
+			}
+			if(out.equals("class")){
+
 			}
 
 

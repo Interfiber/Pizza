@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+function help() {
+    echo "Pizza Help Page"
+    echo "     Commands: "
+    echo "compile : Run Pizza Script"
+    echo "version : Get Pizza Version"
+    echo "init : Create Simple Pizza Project"
+    echo "docs : Open Pizza docs in browser"
+    echo "     Compiler Options: "
+    echo "Note: Options Are placed after the file in the compile command"
+    echo "--save-tmp : Save Generated Caches Created During Script"
+}
+
+
+if [[ -z "${PIZZA_HOME}" ]]; then
+  echo "Error! Pizza Home Not set!"
+  exit 1
+fi
+if [[ -z "${1}" ]]; then
+  help
+fi
+if [[ $1 == "help" ]]; then
+  help
+fi
+if [[ $1 == "docs" ]]; then
+  open https://interfiber.github.io/pizza/docs
+fi
+if [[ $1 == "version" ]]; then
+  java -jar $PIZZA_HOME/libs/Pizza-0.4.jar --version
+fi
+if [[ $1 == "init" ]]; then
+  java -jar $PIZZA_HOME/libs/Pizza-0.4.jar init
+fi
+if [[ $1 == "compile" ]]; then
+  java -jar $PIZZA_HOME/libs/Pizza-0.4.jar compile $2
+fi
+
+
+
+
+

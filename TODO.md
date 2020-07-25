@@ -1,6 +1,7 @@
 # Weekly Snapshot Ideas:
-- [ ] Finish IOLib and HttpLib
-- [ ] Sound Class(PLAY THAT MUSIC LOUD AND CLEAR FROM MY TERMINAL!)
+- [ ] Add classes
+- [ ]
+- [x] Rewrite pizza commandline script in bash
 
-Window Class Removed Because OpenGl And Javafx AND LWJGL Would Not Work Maybe Later.
+
 

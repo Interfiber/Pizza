@@ -16,6 +16,7 @@ public class Screen {
 	public static void printString(String input) throws FileNotFoundException, VarNullException {
 		if(input.contains(".:")){
 			String varFile = input.replace(".:", "");
+			System.out.println(varFile);
 			String data = null;
 			try {
 				 data = Variable.read(varFile.trim());
@@ -27,7 +28,7 @@ public class Screen {
 		}
 		if(!input.contains(".:")) {
 
-			System.out.println(input);
+			System.out.print(input.replace("#{n}", "\n"));
 		}
 }
 public static void print(String input) throws FileNotFoundException, VarNullException{
@@ -39,7 +40,7 @@ public static void print(String input) throws FileNotFoundException, VarNullExce
 		}catch(FileNotFoundException e){
 			throw new VarNullException(varFile);
 		}
-		System.out.print(data.trim());
+		System.out.write(Integer.parseInt(data));
 
 	}
 	if(!input.contains(".:")) {

@@ -1,8 +1,1 @@
-IStream writer "text.txt" {
-This is a test
-This too
-And Me!
-}
-Console.pushString "File data:"
-OStream reader = "text.txt"
-Console.pushString ".:reader"
+Console.pushString "Enter your Name:"

@@ -16,6 +16,7 @@ dependencies {
 	compile group: 'commons-io', name: 'commons-io', version: '2.6'
 	compile group: 'joda-time', name: 'joda-time', version: '2.10.6'
 	compile group: 'org.yaml', name: 'snakeyaml', version: '1.26'
+    compile group: 'org.rauschig', name: 'jarchivelib', version: '1.0.0'
     testImplementation 'junit:junit:4.11'
 }
 
