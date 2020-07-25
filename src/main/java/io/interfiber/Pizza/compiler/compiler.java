@@ -1,6 +1,7 @@
 package io.interfiber.Pizza.compiler;
 import io.interfiber.Pizza.HttpLib.Downloader;
 import io.interfiber.Pizza.IOLib.Writer;
+import io.interfiber.Pizza.coreFunctions.Class;
 import io.interfiber.Pizza.coreFunctions.Math;
 import io.interfiber.Pizza.coreFunctions.*;
 import io.interfiber.Pizza.lang.*;
@@ -222,7 +223,10 @@ public class compiler {
 				Variable.create(name, s.next());
 			}
 			if(out.equals("class")){
-
+				String className = reader.next();
+			String classCode = reader.nextLine();
+			Class c = new Class();
+			c.create(className, classCode);
 			}
 
 
